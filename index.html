@@ -727,21 +727,21 @@
           <div class="flex items-center justify-between bg-white/5 rounded-xl p-3 ring-1 ring-white/10">
             <div>
               <div class="text-white/70">Account number</div>
-              <div class="font-bold" id="pfAcctNo">0209893015</div>
+              <div class="font-bold" id="pfAcctNo">1865748755</div>
             </div>
             <button class="ml-3 text-xs bg-white/10 hover:bg-white/15 rounded-lg px-3 py-2" data-copy-target="#pfAcctNo">Copy</button>
           </div>
           <div class="flex items-center justify-between bg-white/5 rounded-xl p-3 ring-1 ring-white/10">
             <div>
               <div class="text-white/70">Account Name</div>
-              <div class="font-bold" id="pfAcctName">UMOH ABASIFREKE IDORENYIN</div>
+              <div class="font-bold" id="pfAcctName">Pius Inyang</div>
             </div>
             <button class="ml-3 text-xs bg-white/10 hover:bg-white/15 rounded-lg px-3 py-2" data-copy-target="#pfAcctName">Copy</button>
           </div>
           <div class="flex items-center justify-between bg-white/5 rounded-xl p-3 ring-1 ring-white/10">
             <div>
               <div class="text-white/70">Bank</div>
-              <div class="font-bold" id="pfBank">Gtb</div>
+              <div class="font-bold" id="pfBank">Paga</div>
             </div>
             <button class="ml-3 text-xs bg-white/10 hover:bg-white/15 rounded-lg px-3 py-2" data-copy-target="#pfBank">Copy</button>
           </div>
@@ -978,7 +978,7 @@ Please confirm my payment. I will upload my proof of payment now (picture/screen
           const url = "mailto:" + emailTo + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(msg);
           window.location.href = url;
         } else if (channel === 'telegram'){
-          const tgLink = "https://t.me/magnusverification";
+          const tgLink = "https://t.me/AkeemD";
           const url = tgLink + "?text=" + encodeURIComponent(msg);
           window.location.href = url;
         }
@@ -1020,9 +1020,9 @@ Please confirm my payment. I will upload my proof of payment now (picture/screen
     },
     bank: {
       // Default bank details already shown on the card
-      acctNo: acctNoEl ? acctNoEl.textContent.trim() : '0209893015',
-      acctName: acctNameEl ? acctNameEl.textContent.trim() : 'UMOH ABASIFREKE IDORENYIN',
-      bank: bankEl ? bankEl.textContent.trim() : 'Gtb'
+      acctNo: acctNoEl ? acctNoEl.textContent.trim() : '1865748755',
+      acctName: acctNameEl ? acctNameEl.textContent.trim() : 'Pius Inyang',
+      bank: bankEl ? bankEl.textContent.trim() : 'Paga'
     },
     usdt: {
       acctNo: 'No Wallet address yet',
@@ -1039,8 +1039,8 @@ Please confirm my payment. I will upload my proof of payment now (picture/screen
     // OPay: redirect straight to Telegram DM with an auto-filled message
     if (methodKey === 'opay'){
       const msg = encodeURIComponent('Hello Verified PayFac, I am an opay user, how do I make payment immediately.');
-      const deep = 'tg://resolve?domain=magnusverification&text=' + msg;
-      const web  = 'https://t.me/magnusverification?text=' + msg;
+      const deep = 'tg://resolve?domain=AkeemD&text=' + msg;
+      const web  = 'https://t.me/AkeemD?text=' + msg;
 
       if (methodModal){
         methodModal.classList.add('hidden');
@@ -1058,8 +1058,8 @@ Please confirm my payment. I will upload my proof of payment now (picture/screen
     // Foreign Payments: redirect straight to Telegram DM with an auto-filled message
     if (methodKey === 'usdt'){
       const msg = encodeURIComponent('I am from______ country , I want to make payment in my country\'s currency.\nHow do I pay and start immediately.');
-      const deep = 'tg://resolve?domain=magnusverification&text=' + msg;
-      const web  = 'https://t.me/magnusverification?text=' + msg;
+      const deep = 'tg://resolve?domain=AkeemD&text=' + msg;
+      const web  = 'https://t.me/AkeemD?text=' + msg;
 
       if (methodModal){
         methodModal.classList.add('hidden');
